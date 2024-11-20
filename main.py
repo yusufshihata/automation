@@ -35,8 +35,8 @@ def setBirth():
 
         wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='day']")))
 
-        driver.find_element(By.XPATH, "//input[@id='day']").send_keys("15")  # Day selection (example)
-        driver.find_element(By.XPATH, "//select[@id='month']").send_keys("January")  # Month selection (example)
+        driver.find_element(By.XPATH, "//input[@id='day']").send_keys("15")
+        driver.find_element(By.XPATH, "//select[@id='month']").send_keys("January")
         driver.find_element(By.XPATH, "//input[@id='year']").send_keys("1990")
         driver.find_element(By.XPATH, "//select[@id='gender']").send_keys("Male")
 
@@ -88,5 +88,4 @@ def main():
     print(f"password: {password}")
 
 main()
-
 
